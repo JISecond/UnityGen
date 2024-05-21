@@ -20,8 +20,20 @@ public class GeneratorEditor : Editor
         {
             myScript.GrowRooms();
         }
+        if (GUILayout.Button("Grow Rooms L shape"))
+        {
+            myScript.GrowRoomsLShape();
+        }
+        
+        if (GUILayout.Button("Generate walls"))
+        {
+            myScript.GenerateWalls();
+        }
 
         
-
+        if (GUILayout.Button("RandomizeRooms"))
+        {
+            myScript.RandomizeRooms();
+        }
     }
 }
